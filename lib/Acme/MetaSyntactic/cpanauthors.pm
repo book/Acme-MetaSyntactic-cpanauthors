@@ -7,7 +7,7 @@ our @ISA = qw( Acme::MetaSyntactic::MultiList );
 
 my %names = (
     map {
-        $_ => map { tr/-/_/; $_ } join ' ', Acme::CPANAuthors->new($_)->id
+        $_ => map { tr/-/_/; lc $_ } join ' ', Acme::CPANAuthors->new($_)->id
         } Acme::CPANAuthors->_list_categories()
 );
 
