@@ -17,3 +17,49 @@ delete $names{$_} for grep !$names{$_}, keys %names;
 __PACKAGE__->init( { default => ':all', names => \%names } );
 
 1;
+
+__END__
+
+=head1 NAME
+
+Acme::MetaSyntactic::cpanauthors - We are CPAN authors, and metasyntactic!
+
+=head1 DESCRIPTION
+
+CPAN authors come in all shapes and sizes. The L<Acme::CPANAuthors>
+series of modules aims at grouping them by various criteria. These lists
+are then used to provide statistics on L<http://acme.cpanauthors.org/>.
+
+This theme has a category per I<installed> L<Acme::CPANAuthors> category,
+with the name spelt in lowercase (i.e. if L<Acme::CPANAuthors::French> is
+installed, then Acme::MetaSyntactic::cpanauthors will have a C<french>
+category).
+
+=head1 CONTRIBUTOR
+
+Philippe Bruhat (BooK)
+
+=head1 CHANGES
+
+=over 4
+
+=item *
+
+2014-05-26 - v1.000
+
+First release. And if all goes well, the last.
+
+=item *
+
+2013-04-30
+
+Publicly mentioned on irc.perl.org #perlfr as module I could release any time.
+
+=back
+
+=head1 SEE ALSO
+
+L<Acme::CPANAuthors>, L<Task::CPANAuthors>,
+L<Acme::MetaSyntactic>, L<Acme::MetaSyntactic::MultiList>.
+
+=cut
