@@ -45,6 +45,13 @@ Philippe Bruhat (BooK)
 
 =item *
 
+2014-06-03 - v1.001
+
+Fixed the categories to be all lowercase, and the names to be in uppercase
+(as in PAUSE). Published one day late because of a disk crash.
+
+=item *
+
 2014-05-26 - v1.000
 
 First release. And if all goes well, the last.
